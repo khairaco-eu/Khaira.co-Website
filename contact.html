@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Khaira.co</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <header>
+    <div class="container">
+      <nav class="nav">
+    <a href="index.html" class="logo">
+        <img src="images/TFW.svg" alt="Khaira.co Logo">
+      </a>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="contact.html" class="nav-cta">Free Strategy Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header" style="text-align:left;">
+          <div class="section-kicker">Contact</div>
+          <h1 class="section-title">Tell us what you’re building.</h1>
+          <p class="section-subtitle" style="margin-left:0;">
+            Share a few details and we’ll get back with ideas, timelines and next steps.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <div class="card">
+              <p class="card-text">
+                Whether you’re launching a new brand, rebuilding your site or exploring AI and automation,
+                we’ll help you shape it into a clear, actionable project.
+              </p>
+              <p class="card-text">
+                You can expect a friendly, no-pressure conversation. If we’re not the right fit, we’ll say so.
+              </p>
+              <p><strong>Prefer email?</strong></p>
+              <ul class="contact-meta">
+                <!-- change this to your real details -->
+                <li>📧 <strong>info@khairaco.eu</strong></li>
+                <li>📞 <strong>+48 452193173</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <!-- visual form only; needs backend to send -->
+              <form>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input id="name" name="name" type="text" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="budget">Budget*</label>
+                    <select id="budget" name="budget" required>
+                      <option value="">Select a range</option>
+                      <option value="under-1000">Under $1,000</option>
+                      <option value="1000-5000">$1,000 – $5,000</option>
+                      <option value="5000-15000">$5,000 – $15,000</option>
+                      <option value="15000-plus">$15,000+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="services">What are you interested in?*</label>
+                  <select id="services" name="services" required>
+                    <option value="">Choose an option</option>
+                    <option value="website">Website / Landing Page</option>
+                    <option value="marketing">Online Marketing & Ads</option>
+                    <option value="seo">SEO & Local Growth</option>
+                    <option value="ai">AI Chatbot / Automation</option>
+                    <option value="apps">App / Software Development</option>
+                    <option value="other">Combination / Not sure yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Tell us about your project*</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Send message</button>
+                <p class="card-text" style="font-size:12px;margin-top:6px;">
+                  This form is visual only. To receive messages, connect it to a PHP script or a form service
+                  (e.g. Netlify Forms, Formspree, etc.).
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Khaira.co · All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

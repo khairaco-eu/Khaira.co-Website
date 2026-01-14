@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<div class="whale-bg"></div>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaira.co – THE FLYING WHALE AGENCY (Digital Growth & AI Agency)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <header>
+    <div class="container">
+      <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/TFW.svg" alt="Khaira.co Logo">
+      </a>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="clients.html">Clients</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="nav-cta">Free Strategy Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+<div id="navbar-placeholder"></div>
+
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <section class="clients-hero">
+    <div class="container">
+        <div class="img-container">
+      <h1 class="clients-title">Clients & Partnerships</h1>
+    </div>
+      <p class="clients-subtitle">
+        From startups to established brands, we’ve worked with teams across industries
+        to build digital systems that scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- CLIENT LOGOS -->
+  <section class="clients-section">
+    <div class="container">
+
+      <h2 class="section-heading">Brands We’ve Worked With</h2>
+
+      <div class="clients-grid">
+        <div class="client-card"><img src="images/clients/1.svg" alt="Client 1"></div>
+        <div class="client-card"><img src="images/clients/2.svg" alt="Client 2"></div>
+        <div class="client-card"><img src="images/clients/3.svg" alt="Client 3"></div>
+        <div class="client-card"><img src="images/clients/4.svg" alt="Client 4"></div>
+        <div class="client-card"><img src="images/clients/5.svg" alt="Client 5"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST COPY -->
+  <section class="clients-trust">
+    <div class="container">
+      <p>
+        We collaborate closely with founders, marketing teams, and leadership to design
+        solutions that are practical, scalable, and aligned with long-term goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="clients-testimonials">
+    <div class="container">
+
+      <h2 class="section-heading">What Our Clients Say</h2>
+
+      <div class="testimonials-grid">
+        <div class="img-container">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Khaira.co helped us simplify our entire digital stack. The execution was fast,
+            clear, and exactly what we needed to scale.”
+          </p>
+          <span class="testimonial-author">— Founder, SaaS Startup</span>
+        </div>
+        </div>
+  <div class="img-container">
+        <div class="testimonial-card">
+          
+          <p class="testimonial-text">
+            “From strategy to delivery, the process felt smooth and structured.
+            Highly recommend for teams that want clarity.”
+          </p>
+          <span class="testimonial-author">— Marketing Lead, E-commerce Brand</span>
+        </div>
+      </div>
+        <div class="img-container">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “They handled the complexity so we could focus on growth.
+            The results spoke for themselves.”
+          </p>
+          <span class="testimonial-author">— Director, Services Company</span>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="clients-cta">
+    <div class="container">
+      <h2>Want to work together?</h2>
+      <p>
+        Let’s talk about how we can support your next stage of growth.
+      </p>
+      <a href="contact.html" class="btn-primary">Book a Free Strategy Call</a>
+    </div>
+  </section>
+
+</div>
+
+<div id="footer-placeholder"></div>
+<footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Khaira.co · All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="clients.html">Clients</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="footer.js"></script>
+
+<script src="footer.js"></script>
+<script src="navbar.js"></script>
+
+</body>
+</html>

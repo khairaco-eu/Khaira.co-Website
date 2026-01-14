@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Khaira.co</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <header>
+    <div class="container">
+      <nav class="nav">
+    <a href="index.html" class="logo">
+        <img src="images/TFW.svg" alt="Khaira.co Logo">
+      </a>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="nav-cta">Free Strategy Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header" style="text-align:left;">
+          <div class="section-kicker">Services</div>
+          <h1 class="section-title">Services built around growth, not vanity.</h1>
+          <p class="section-subtitle" style="margin-left:0;">
+            We combine web, marketing, apps and AI into one simple, results-focused partner.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <img src="images/services/10.svg" alt="Websites" />
+            <div class="card-label">Web</div>
+            <div class="card-title">Websites & Landing Pages</div>
+            <p class="card-text">
+              Clean, modern websites that help your brand look legit and convert.
+            </p>
+            <ul class="card-list">
+              <li>Business & startup websites</li>
+              <li>Landing pages & funnels</li>
+              <li>E-commerce setups</li>
+              <li>Hosting & maintenance</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="images/services/11.svg" alt="Online marketing" />
+            <div class="card-label">Growth</div>
+            <div class="card-title">Online Marketing</div>
+            <p class="card-text">
+              Performance-focused marketing to drive leads and sales.
+            </p>
+            <ul class="card-list">
+              <li>Social media management</li>
+              <li>Google & Meta ads</li>
+              <li>Email marketing & automations</li>
+              <li>Campaign analytics</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="images/services/12.svg" alt="SEO and local" />
+            <div class="card-label">Visibility</div>
+            <div class="card-title">SEO & Local Growth</div>
+            <p class="card-text">
+              Be found when customers are searching for you.
+            </p>
+            <ul class="card-list">
+              <li>Technical & on-page SEO</li>
+              <li>Local SEO & map rankings</li>
+              <li>Google Business optimisation</li>
+              <li>Review & reputation systems</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="images/services/13.svg" alt="AI chatbots" />
+            <div class="card-label">AI</div>
+            <div class="card-title">AI & Automation</div>
+            <p class="card-text">
+              Use AI to handle support, qualify leads and automate routine work.
+            </p>
+            <ul class="card-list">
+              <li>AI chatbots for sales & support</li>
+              <li>Workflow & CRM automations</li>
+              <li>Custom AI tools & assistants</li>
+              <li>AI training for teams</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="images/services/14.svg" alt="Apps" />
+            <div class="card-label">Product</div>
+            <div class="card-title">Apps & Software</div>
+            <p class="card-text">
+              Tailored web & mobile apps that match your processes.
+            </p>
+            <ul class="card-list">
+              <li>Web & mobile apps</li>
+              <li>Internal tools & portals</li>
+              <li>API integrations</li>
+              <li>Enterprise-grade builds</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <img src="images/services/15.svg" alt="Automation systems" />
+            <div class="card-label">Systems</div>
+            <div class="card-title">Automation & CRM Systems</div>
+            <p class="card-text">
+              Connect marketing, sales and operations into one system.
+            </p>
+            <ul class="card-list">
+              <li>CRM setup & optimisation</li>
+              <li>Sales pipeline automation</li>
+              <li>Lead routing & follow-ups</li>
+              <li>Booking & appointment flows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title" style="margin-bottom:8px;">Not sure which services you need?</h2>
+          <p class="section-subtitle" style="margin-left:0;margin-bottom:12px;">
+            Tell us where your business is today and where you want it to be – we’ll recommend a simple mix of services.
+          </p>
+          <button class="btn-primary" onclick="window.location.href='contact.html'">Talk to us</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Khaira.co · All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

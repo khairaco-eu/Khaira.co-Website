@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing & Packages – Khaira.co</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-wrapper">
+  <header>
+    <div class="container">
+      <nav class="nav">
+    <a href="index.html" class="logo">
+        <img src="images/TFW.svg" alt="Khaira.co Logo">
+      </a>
+        <button class="nav-toggle" id="navToggle">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html" class="active">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="nav-cta">Free Strategy Call</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header" style="text-align:left;">
+          <div class="section-kicker">Pricing</div>
+          <h1 class="section-title">Simple packages for different stages of growth.</h1>
+          <p class="section-subtitle" style="margin-left:0;">
+            From first launch to full digital transformation, choose the setup that matches where you are now.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="package-card">
+            <div class="package-header">
+            <div class="package-name">Starter Launch Package</div>
+            </div>
+            <div class="package-audience">For new businesses & startups.</div>
+            <br>
+            <p class="gold-text">$999 – $2,500 · one-time</p>
+            <div class="package-note">
+              Launch your brand, website and basic systems in weeks, not months.
+            </div>
+            <ul class="package-list">
+              <li>5–7 page modern website</li>
+              <li>Branding basics (logo, colours, fonts)</li>
+              <li>Social channel setup</li>
+              <li>Basic on-page SEO</li>
+              <li>Simple FAQ / lead chatbot</li>
+            </ul>
+            <button class="btn-outline" onclick="window.location.href='contact.html'">Start a project</button>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header">
+            <div class="package-name">Local Business Growth System</div>
+            </div>
+            <div class="package-audience">For service & local businesses.</div>
+            <br>
+            <p class="gold-text">$2,000 – $6,000 · setup</p>
+            <div class="package-note">
+              Build a steady pipeline with better visibility, ads and automation.
+            </div>
+            <ul class="package-list">
+              <li>High-converting website / redesign</li>
+              <li>Local SEO & Google Business optimisation</li>
+              <li>Google & social ad campaigns</li>
+              <li>Review & reputation system</li>
+              <li>CRM & appointment automation</li>
+              <li>AI chatbot to qualify leads 24/7</li>
+            </ul>
+            <div class="package-note">
+              Monthly retainers from $499 – $2,499 for ongoing growth.
+            </div>
+            <button class="btn-outline" onclick="window.location.href='contact.html'">Book a growth call</button>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header">
+            <div class="package-name">Enterprise Transformation Suite</div>
+            </div>
+            <div class="package-audience">For corporate & enterprise teams.</div>
+            <br>
+            <p class="gold-text">Contact Us for Tailored Package-price</p>
+            <div class="package-note">
+              Full digital product, AI and automation builds backed by strategy.
+            </div>
+            <ul class="package-list">
+              <li>Custom web & mobile applications</li>
+              <li>AI-powered internal tools & assistants</li>
+              <li>Data dashboards & reporting</li>
+              <li>Complex integrations & APIs</li>
+              <li>Security & documentation</li>
+              <li>Dedicated project management</li>
+            </ul>
+            <button class="btn-outline" onclick="window.location.href='contact.html'">Discuss enterprise scope</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title" style="margin-bottom:8px;">Need custom pricing?</h2>
+          <p class="section-subtitle" style="margin-left:0;margin-bottom:12px;">
+            Share your scope and we’ll send a clear, no-pressure proposal with a few options.
+          </p>
+          <button class="btn-primary" onclick="window.location.href='contact.html'">Get a custom quote</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Khaira.co · All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
