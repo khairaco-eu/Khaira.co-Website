@@ -210,7 +210,16 @@
   });
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+  <script>
+document.addEventListener('contextmenu', function (e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+});
+</script>
+
 </body>
 </html>
+
 
 
